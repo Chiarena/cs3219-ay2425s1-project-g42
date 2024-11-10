@@ -25,6 +25,23 @@ services:
       - ENV
       - DB_CLOUD_URI=${DB_URI_QUESTION}
 
+  history-service:
+    build:
+      context: ./history-service  
+      dockerfile: Dockerfile       
+      args:
+        - PORT=${PORT_HISTORY}
+    ports:
+      - ${PORT_HISTORY}:${PORT_HISTORY}
+    environment:
+      - ENV
+      - DB_URI_HISTORY=${DB_URI_HISTORY}
+
+    depends_on:
+      - matching-redis
+    networks:
+      - matching
+
   matching-redis:
     image: redis
     networks:

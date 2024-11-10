@@ -1,0 +1,28 @@
+.history-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .history-accordion {
+    margin-top: 20px;
+  }
+  
+  .history-item {
+    margin-bottom: 10px;
+  }
+  
+  .history-item .MuiAccordionSummary-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .history-page h4 {
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+  .history-page .MuiTypography-body2 {
+    color: #555;
+  }

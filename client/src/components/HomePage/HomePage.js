@@ -32,6 +32,7 @@ function HomePage() {
                 their solutions to track your progress and learn from 
                 your mistakes."
               label="Profile"
+              link="/history"
             />
           </Grid2>
 
