@@ -9,7 +9,10 @@ export const SVC_PORTS = {
   user: 3001,
   question: 3002,
   matching: 3003,
-  history: 3007
+  history: 3007,
+  collaboration: 3004,
+  ai: 3005,
+  chat: 3006
 };
 
 // automatically generated from SVC_PORTS

@@ -10,6 +10,7 @@ import Login from "../components/Login/components/Login";
 import Signup from "../components/Login/components/Signup";
 import HistoryPage from "../components/HistoryPage/HistoryPage";
 
+import CollaborationPage from "../components/CollaborationPage";
 
 export const router = createBrowserRouter([
   {
@@ -30,7 +31,11 @@ export const router = createBrowserRouter([
           {
             path: "/history",
             element: <HistoryPage />
-          }
+          },
+          {
+            path: "/collaborationpage",
+            element: <CollaborationPage />,
+          },
         ],
       },
     ],
